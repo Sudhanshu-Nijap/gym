@@ -302,6 +302,13 @@
 
         /* Mobile Adjustments */
         @media (max-width: 500px) {
+            body {
+                background-attachment: scroll; /* Fixes mobile background zooming bug */
+                height: 100%;
+                min-height: 100vh;
+                overflow: auto; /* Allow scrolling if content is taller than screen */
+                padding: 20px 10px;
+            }
             .form-grid {
                 grid-template-columns: 1fr;
                 gap: 0;
